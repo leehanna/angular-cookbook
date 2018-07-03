@@ -1,0 +1,15 @@
+<ng-template [ngIf]="authService.isAuthenticated()">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success"
+        routerLink="new">New Recipe</button>
+    </div>
+  </div>
+  <hr>
+</ng-template>
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item *ngFor="let recipeItem of this.recipes; let i = index"
+      [recipeId]="i"></app-recipe-item>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.invalid-feedback {
+  color: tomato;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid tomato;
+}
